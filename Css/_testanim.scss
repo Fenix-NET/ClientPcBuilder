@@ -1,0 +1,36 @@
+// <style>
+	div.at-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+	.at-item {
+		width: 100px; height: 100px; background-color:#ffe672; 
+		
+		animation-name: slide-in-fwd-right;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: none;
+			
+		/* shorthand
+		animation: slide-in-fwd-right 1s ease 0s 1 normal none;*/
+	}
+	@keyframes slide-in-fwd-right {
+			
+		0% {
+			transform:translateZ(-1400px) translateX(1000px);
+			opacity:0;
+		}
+		100% {
+			transform:translateZ(0) translateX(0);
+			opacity:1;
+		}
+	}
+// </style>
+// <div class='at-container'>
+// 	<div class='at-item' ></div>
+// </div>

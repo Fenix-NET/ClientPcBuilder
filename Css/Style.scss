@@ -1,0 +1,76 @@
+@import "startStyle";
+@import "footer";
+
+@mixin flex-center{
+    display: flex;
+    margin: 0 auto;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.menu-container{
+    width: 100%;
+    max-width: 1920px;
+    background-color: black;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    .menu {
+        width: 1440px;
+        max-width: 1920px;
+        display: flex;
+        height: 60px;  
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 3% 0 3%;
+        .btn-nav{
+            margin-left: 2%;
+        }
+    }
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header {
+    height: 600px;
+    max-width: 100%;
+    .bottom-header {
+        background-color: rgb(42, 42, 42);
+        height: 600px;
+    }
+}
+.btn-menu {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#basket {
+    margin-left: auto;
+}
+
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.bottom-header {
+    background-image: url(../../../images/PcBuilder/m-pc-11.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.img-1 {
+    // position: absolute;
+    width: 400px;
+    background-image: url(../../../images/PcBuilder/m-pc-11.png);
+    img {
+        width: 100%;
+        -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 18%, 80% 0%, 50% 30%);
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 18%, 80% 0%, 50% 30%);
+    }
+}
