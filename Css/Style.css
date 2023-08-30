@@ -15,6 +15,10 @@ body {
   height: 100%;
 }
 
+.header {
+  flex: 1 0 auto;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -27,17 +31,34 @@ body {
   background-color: black;
   height: 150px;
   max-width: 100%;
+  margin-top: 15px;
 }
 
+.anim-btn-pulse {
+  animation: pulse-zoomout 2s linear 2s infinite alternate none;
+}
+
+@keyframes pulse-zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu-container {
   width: 100%;
   max-width: 1920px;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   height: 60px;
   display: flex;
   position: fixed;
   margin: 0 auto;
   top: 0;
+  z-index: 1;
 }
 .menu-container .menu {
   width: 1440px;
@@ -58,18 +79,32 @@ body {
 }
 
 .header {
-  height: 600px;
+  height: 100%;
+  max-height: 1000px;
   max-width: 100%;
 }
 .header .bottom-header {
-  background-color: rgb(42, 42, 42);
-  height: 600px;
+  height: 100%;
 }
 
 .btn-menu {
   text-align: center;
   color: white;
   text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 18px 2px;
+  height: 100%;
+}
+.btn-menu:hover {
+  border-bottom: 2px solid greenyellow;
+}
+
+.btn-menu:hover {
+  color: chartreuse;
+}
+
+.btn-menu-dop {
+  margin-right: 2%;
 }
 
 #basket {
@@ -77,23 +112,106 @@ body {
 }
 
 .content {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   background-color: white;
 }
 
 .bottom-header {
-  background-image: url(../../../images/PcBuilder/m-pc-11.png);
-  background-color: transparent;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, rgb(40, 40, 40) 0%, rgb(5, 5, 5) 100%);
 }
 
-.img-1 {
-  width: 400px;
-  background-image: url(../../../images/PcBuilder/m-pc-11.png);
+.img-1 #img-pc {
+  width: 300px;
+  position: relative;
 }
-.img-1 img {
-  width: 100%;
-  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 18%, 80% 0%, 50% 30%);
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 18%, 80% 0%, 50% 30%);
+.img-1 #img-cross {
+  width: 500px;
+  position: absolute;
+  z-index: 0;
+  left: 365px;
+  top: -47px;
+  filter: drop-shadow(0 0 30px rgba(255, 84, 138, 0.381));
+}
+
+#header-center {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-content {
+  margin-right: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: center;
+}
+.header-content h1 {
+  margin-bottom: 20px;
+  font-family: "Play", sans-serif;
+  font-size: 3.5em;
+}
+.header-content p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.header-content button {
+  color: #14396A;
+  font-size: 16px;
+  text-shadow: 0px 0px 0px #7CACDE;
+  box-shadow: 0px 0px 0px #BEE2F9;
+  padding: 15px 23px;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+}
+.header-content a {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 13%;
+}
+.header-content a:hover {
+  background-color: white;
+  color: black;
+  animation-play-state: paused;
+}
+
+.container-content {
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  margin: 0 auto;
+}
+.container-content div {
+  height: 400px;
+  width: 33%;
+  margin-top: 30px;
+}
+
+#super1 {
+  background-color: red;
+}
+
+#super2 {
+  background-color: green;
+}
+
+#super3 {
+  background-color: blue;
 }/*# sourceMappingURL=Style.css.map */

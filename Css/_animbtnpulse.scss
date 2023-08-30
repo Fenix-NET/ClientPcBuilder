@@ -1,0 +1,15 @@
+.anim-btn-pulse {
+    animation: pulse-zoomout 2s linear 2s infinite alternate none;
+}
+@keyframes pulse-zoomout {
+			
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.1);
+    }
+    100% {
+        transform:scale(1);
+    }
+}

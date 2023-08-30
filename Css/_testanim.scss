@@ -1,17 +1,17 @@
 // <style>
-	div.at-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-	}
-	.at-item {
-		width: 100px; height: 100px; background-color:#ffe672; 
-		
+	// div.at-container {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	height: 100%;
+	// }
+	.img-1 {
+		// width: 200px;
+        // height: 200px;
 		animation-name: slide-in-fwd-right;
-		animation-duration: 1s;
+		animation-duration: 2s;
 		animation-timing-function: ease;
-		animation-delay: 0s;
+		animation-delay: 1s;
 		animation-iteration-count: 1;
 		animation-direction: normal;
 		animation-fill-mode: none;
