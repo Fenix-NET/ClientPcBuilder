@@ -27,6 +27,10 @@ body {
   flex: 0 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .footer {
   background-color: black;
   height: 150px;
@@ -34,21 +38,6 @@ body {
   margin-top: 15px;
 }
 
-.anim-btn-pulse {
-  animation: pulse-zoomout 2s linear 2s infinite alternate none;
-}
-
-@keyframes pulse-zoomout {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .menu-container {
   width: 100%;
   max-width: 1920px;
@@ -73,24 +62,11 @@ body {
   margin-left: 2%;
 }
 
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.header {
-  height: 100%;
-  max-height: 1000px;
-  max-width: 100%;
-}
-.header .bottom-header {
-  height: 100%;
-}
-
 .btn-menu {
   text-align: center;
   color: white;
   text-decoration: none;
+  font-size: 1.2em;
   font-family: "Roboto Condensed", sans-serif;
   padding: 18px 2px;
   height: 100%;
@@ -111,10 +87,117 @@ body {
   margin-left: auto;
 }
 
+.menu-icon {
+  vertical-align: middle;
+  width: 28px;
+}
+
+.anim-btn-pulse {
+  animation: pulse-zoomout 2s linear 2s infinite alternate none;
+}
+
+@keyframes pulse-zoomout {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container-content {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+#test1 {
+  padding: 20px;
+  height: 270px;
+  width: 90%;
+  min-width: 1000px;
+  background: linear-gradient(90deg, rgb(244, 0, 255) 0%, rgb(255, 0, 0) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+#test1 img {
+  height: 300px;
+  position: relative;
+  bottom: 100px;
+  filter: drop-shadow(0 0 5px rgba(255, 161, 178, 0.642));
+}
+
+#test2 {
+  padding: 20px;
+  margin-top: 30px;
+  height: 270px;
+  width: 90%;
+  min-width: 1000px;
+  background: linear-gradient(90deg, rgb(76, 175, 80) 0%, rgb(49, 220, 255) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+#test2 img {
+  height: 320px;
+  position: relative;
+  bottom: 100px;
+}
+
+#test3 {
+  padding: 20px;
+  margin-top: 30px;
+  height: 270px;
+  width: 90%;
+  min-width: 1000px;
+  background: linear-gradient(90deg, rgb(238, 130, 238) 0%, rgb(0, 209, 255) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+#test3 img {
+  height: 320px;
+  position: relative;
+  bottom: 100px;
+}
+
+.test-class {
+  width: 30%;
+}
+.test-class a {
+  color: black;
+  font-family: "Play", sans-serif;
+  font-size: 2.5em;
+}
+.test-class > p {
+  color: black;
+  font-family: "Play", sans-serif;
+  font-size: 1.5em;
+}
+
+#pomarka {
+  margin-top: 10%;
+  font-size: 1.1em;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  max-height: 1000px;
+  max-width: 100%;
+}
+.header .bottom-header {
+  height: 100%;
+}
+
 .content {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(10, 10, 10);
 }
 
 .bottom-header {
@@ -122,7 +205,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at 50% 50%, rgb(40, 40, 40) 0%, rgb(5, 5, 5) 100%);
+  background: radial-gradient(circle at 50% 50%, rgb(40, 40, 40) 0%, rgb(10, 10, 10) 100%);
 }
 
 .img-1 #img-pc {
@@ -198,20 +281,57 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
-.container-content div {
-  height: 400px;
-  width: 33%;
+.container-content .pres-cart {
+  height: 500px;
+  width: 30%;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #super1 {
-  background-color: red;
+  background: linear-gradient(0deg, #f857a6 0%, #ff5858 100%);
+  padding: 10px;
+}
+#super1 img {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+#super1 a {
+  color: black;
+  font-family: "Play", sans-serif;
+  font-size: 2.5em;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 #super2 {
-  background-color: green;
+  background: linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
+  padding: 10px;
+}
+#super2 img {
+  width: 300px;
+}
+#super2 a {
+  color: black;
+  font-family: "Play", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: auto;
 }
 
 #super3 {
-  background-color: blue;
+  background: linear-gradient(0deg, #1488cc 0%, #2b32b2 100%);
+  padding: 10px;
+}
+#super3 img {
+  width: 300px;
+}
+#super3 a > p {
+  color: black;
+  font-family: "Play", sans-serif;
+  font-size: 2.5em;
+  margin-top: auto;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=Style.css.map */

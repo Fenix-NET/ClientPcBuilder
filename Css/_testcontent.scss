@@ -1,0 +1,72 @@
+.container-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#test1 {
+    padding: 20px;
+    height: 270px;
+    width: 90%;
+    min-width: 1000px;
+    background: linear-gradient(90deg, rgba(244, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    img {
+        height: 300px;
+        position: relative;
+        bottom: 100px;
+        filter: drop-shadow(0 0 5px rgba(255, 161, 178, 0.642));
+    }
+
+}
+
+#test2 {
+    padding: 20px;
+    margin-top: 30px;
+    height: 270px;
+    width: 90%;
+    min-width: 1000px;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(49, 220, 255, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    img {
+        height: 320px;
+        position: relative;
+        bottom: 100px;
+    }
+}
+
+#test3 {
+    padding: 20px;
+    margin-top: 30px;
+    height: 270px;
+    width: 90%;
+    min-width: 1000px;
+    background: linear-gradient(90deg, rgba(238, 130, 238, 1) 0%, rgba(0, 209, 255, 1) 100%);
+    display: flex;
+    justify-content: space-around;
+    img {
+        height: 320px;
+        position: relative;
+        bottom: 100px;
+    }
+}
+.test-class {
+    width: 30%;
+    
+    a {
+        color: black;
+        font-family: 'Play', sans-serif;
+        font-size: 2.5em;
+    }
+    & > p {
+        color: black;
+        font-family: 'Play', sans-serif;
+        font-size: 1.5em;
+    }
+}
+#pomarka {
+    margin-top: 10%;
+    font-size: 1.1em;
+}
