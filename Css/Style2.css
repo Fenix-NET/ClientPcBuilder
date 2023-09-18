@@ -61,7 +61,7 @@ a {
   height: 60px;
   align-items: center;
   margin: 0 auto;
-  padding: 0 3% 0 3%;
+  padding: 0 40px;
 }
 .menu-container .menu .btn-nav {
   margin-left: 2%;
@@ -177,13 +177,11 @@ a {
   color: whitesmoke;
   display: flex;
   margin-top: 60px;
-  padding: 20px 3%;
+  padding: 20px 40px;
 }
 
-/*********************** Filter Price slider *******************/
-/***************************************************************/
 .filter-container {
-  width: 300px;
+  min-width: 310px;
   background-color: rgb(15, 15, 15);
   background: radial-gradient(circle farthest-corner at center center, #161616 0%, #0F0F0F 100%);
   border-radius: 10px;
@@ -227,6 +225,7 @@ a {
   border-radius: 10px;
   padding: 15px;
   display: flex;
+  margin-left: 40px;
 }
 
 .sort-container {
@@ -259,9 +258,9 @@ a {
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 300px;
+  width: 310px;
   padding: 20px;
-  margin: 20px 0;
+  margin: 40px 0 0 40px;
   background-color: rgb(15, 15, 15);
   border-radius: 10px;
   font-family: "Nunito Sans", sans-serif;
